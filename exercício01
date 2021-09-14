@@ -1,0 +1,40 @@
+package application;
+
+import entities.Triangle;
+import java.util.Scanner;
+
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+       
+       Triangle x, y;
+       x = new Triangle(); // instaciei o objeto 
+       y = new Triangle(); // instanciei o objeto 
+       
+        System.out.println("Valores X");
+        System.out.println("valor a:");
+        x.a = leia.nextDouble();
+        System.out.println("Valor b: ");
+        x.b = leia.nextDouble();
+        System.out.println("Valor c");
+        x.c = leia.nextDouble();
+        
+        double area1 = x.area();
+        System.out.println(x.toString());
+        
+        System.out.printf("Áreda do Triangulo: %.4f%n" , area1);
+        
+        System.out.println("Valores Y");
+        System.out.println("valor a:");
+        y.a = leia.nextDouble();
+        System.out.println("Valor b: ");
+        y.b = leia.nextDouble();
+        System.out.println("Valor c");
+        y.c = leia.nextDouble();
+        
+        double area2 = y.area();
+        System.out.printf("Área do Triangulo Y: %.4f%n", + area2);
+        
+    }
+}
